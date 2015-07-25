@@ -8,7 +8,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 
 urlpatterns = [
-    url(r'^$', TemplateView.as_view(template_name='pages/findmygrandma.html'), name="home"),
+    url(r'^$', TemplateView.as_view(template_name='pages/map.html'), name="home"),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name="about"),
 
     # Django Admin
