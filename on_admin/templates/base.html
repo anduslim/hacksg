@@ -26,11 +26,14 @@
 
     <!-- Your stuff: Third-party css libraries go here -->
     <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/magnific-popup/magnific-popup.css' %}" />
     <link rel="stylesheet" href="{% static 'css/bootstrap/datepicker3.css' %}" />
     <link rel="stylesheet" href="{% static 'css/ui-lightness/jquery-ui-1.10.4.custom.css' %}" />
     <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap-multiselect.css' %}" />
     <link rel="stylesheet" href="{% static 'css/morris/morris.css' %}" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Quicksand:400,700,300">
+    <link rel="stylesheet" href="{% static 'css/select2/select2.css' %}" />    
+    <link rel="stylesheet" href="{% static 'css/nanoscroller/nanoscroller.css' %}" />
     <!-- This file store project specific CSS -->
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{% static 'css/theme.css' %}" />
@@ -99,7 +102,7 @@
       <script src="{% static 'js/bootstrap/bootstrap.js' %}"></script>
       <script src="{% static 'js/nanoscroller/nanoscroller.js' %}"></script>
       <script src="{% static 'js/bootstrap/bootstrap-datepicker.js' %}"></script>
-
+      <script src="{% static 'js/magnific-popup/magnific-popup.js' %}"></script>
 
       <!-- Your stuff: Third-party javascript libraries go here -->
       <script src="{% static 'js/jquery/jquery-ui-1.10.4.custom.js' %}"></script>
@@ -120,6 +123,7 @@
       <script src="{% static 'js/liquid-meter/liquid.meter.js' %}"></script>
 
 
+
       <!-- place project specific Javascript in this file -->
       <!-- Theme Base, Components and Settings -->
       <script src="{% static 'js/theme.js' %}"></script>
@@ -130,8 +134,8 @@
       <!-- Theme Initialization Files -->
       <script src="{% static 'js/theme.init.js' %}"></script>
 
-      <script src="{% static 'js/dashboard/examples.dashboard.js' %}"></script>
-      <script src="{% static 'js/project.js' %}"></script>
+
+
     {% endblock javascript %}
   </body>
 </html>
