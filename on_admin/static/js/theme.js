@@ -2251,8 +2251,29 @@ window.theme = {};
 
 }).apply(this, [ window.theme, jQuery ]);
 
+function initialize() {
+
+var mapOptions =  {
+    center: new google.maps.LatLng(1.340021, 103.825583),
+    zoom: 12,
+    zoomControl: true,
+    zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.DEFAULT
+    },
+};
+
+  var map = new google.maps.Map(document.getElementById('gmap'), mapOptions);
+
+  var ctaLayer = new google.maps.KmlLayer({
+    url: '../SG_SUBZONE.kml'
+  });
+  ctaLayer.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
 // Map Builder
-(function( theme, $ ) {
+/*(function( theme, $ ) {
 
 	'use strict';
 
@@ -3195,7 +3216,7 @@ window.theme = {};
 		});
 	});
 
-}).apply(this, [ window.theme, jQuery ]);
+}).apply(this, [ window.theme, jQuery ]);*/
 
 // Animate
 (function(theme, $) {
