@@ -22,9 +22,10 @@
 <Style id="randomPolyStyle">
 <LineStyle>
 <width>0.5</width>
+<color>FFFFEFD5</color>
 </LineStyle>
 <PolyStyle>
-<color>FFEFD5f0</color>
+<color>1037d9f0</color>
 <colorMode>random</colorMode>
 </PolyStyle>
 <LabelStyle>
