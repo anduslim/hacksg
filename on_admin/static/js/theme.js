@@ -2251,29 +2251,8 @@ window.theme = {};
 
 }).apply(this, [ window.theme, jQuery ]);
 
-function initialize() {
-
-var mapOptions =  {
-    center: new google.maps.LatLng(1.340021, 103.825583),
-    zoom: 12,
-    zoomControl: true,
-    zoomControlOptions: {
-        style: google.maps.ZoomControlStyle.DEFAULT
-    },
-};
-
-  var map = new google.maps.Map(document.getElementById('gmap'), mapOptions);
-
-  var ctaLayer = new google.maps.KmlLayer({
-    url: '../SG_SUBZONE.kml'
-  });
-  ctaLayer.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
 // Map Builder
-/*(function( theme, $ ) {
+(function( theme, $ ) {
 
 	'use strict';
 
@@ -2398,9 +2377,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			}
 
 			this.geocoder = new google.maps.Geocoder();
-            this.ctaLayer = new google.maps.KmlLayer({
-                url: 'https://www.dropbox.com/s/3wk9gk012nf78cz/SG_SUBZONE.kml?dl=0'
-            });
 
 			google.maps.event.addDomListener( window, 'load', function() {
 				_self.options.mapOptions.center = new google.maps.LatLng( _self.options.mapOptions.center.lat, _self.options.mapOptions.center.lng );
@@ -2410,12 +2386,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				_self
 					.updateControl( 'latlng' )
 					.updateControl( 'zoomlevel' );
-
-                
+	            this.ctaLayer = new google.maps.KmlLayer({
+                    url: 'http://accessibility.place/static/SG_SUBZONE.kml'
+                });
+                this.ctaLayer.setMap(_self.map);
 
 				_self.mapEvents();
 			});
-            this.ctaLayer.setMap(_self.map);
+
 			return this;
 		},
 
@@ -3216,7 +3194,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		});
 	});
 
-}).apply(this, [ window.theme, jQuery ]);*/
+}).apply(this, [ window.theme, jQuery ]);
 
 // Animate
 (function(theme, $) {

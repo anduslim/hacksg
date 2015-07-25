@@ -21,10 +21,10 @@
 </Schema>
 <Style id="randomPolyStyle">
 <LineStyle>
-<width>1.5</width>
+<width>0.5</width>
 </LineStyle>
 <PolyStyle>
-<color>1037d9f0</color>
+<color>FFEFD5f0</color>
 <colorMode>random</colorMode>
 </PolyStyle>
 <LabelStyle>
