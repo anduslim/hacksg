@@ -22,7 +22,6 @@
 <Style id="randomPolyStyle">
 <LineStyle>
 <width>0.5</width>
-<color>FFFFEFD5</color>
 </LineStyle>
 <PolyStyle>
 <color>1037d9f0</color>
