@@ -56,7 +56,7 @@ a:active {
 	min-height: 100vh;
 	padding-top: 60px;
 	table-layout: fixed;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: 100%;
 }
 
@@ -216,7 +216,7 @@ a:active {
 
 	/* Layout Fixed - Sidebar Left Collapsed */
 	html.fixed.sidebar-left-collapsed .page-header {
-		left: 73px;
+		left: 0px;
 	}
 
 	html.fixed.sidebar-left-collapsed .content-body {
@@ -735,7 +735,7 @@ a:active {
 	html.fixed.sidebar-left-collapsed .inner-menu,
 	html.fixed.sidebar-left-collapsed .inner-menu-toggle,
 	html.fixed.sidebar-left-collapsed .inner-toolbar {
-		left: 73px;
+		left: 0px;
 	}
 
 	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
@@ -903,7 +903,7 @@ a:active {
 	html.fixed.sidebar-left-collapsed.sidebar-right-opened.inner-menu-opened .inner-menu,
 	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
 	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu {
-		left: 73px;
+		left: 0px;
 	}
 
 	html.fixed.sidebar-left-collapsed.sidebar-right-opened .content-with-menu .inner-toolbar {
@@ -1745,7 +1745,7 @@ html.header-dark .header .input-search .input-group-btn .btn-default {
 
 	/* Layout Fixed - Sidebar Left Collapsed */
 	html.fixed.sidebar-left-collapsed .page-header {
-		left: 73px;
+		left: 0px;
 	}
 
 	html.fixed.sidebar-left-collapsed .content-body {
@@ -1911,7 +1911,7 @@ html.header-dark .header .input-search .input-group-btn .btn-default {
 
 	/* Layout Fixed - Sidebar Left Collapsed */
 	html.fixed.sidebar-left-collapsed .page-header {
-		left: 73px;
+		left: 0px;
 	}
 
 	html.fixed.sidebar-left-collapsed .content-body {
