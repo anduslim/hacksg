@@ -10,10 +10,23 @@ html.fixed.sidebar-left-collapsed .content-body {
 @media only screen and (min-width: 768px)
 html.fixed.sidebar-left-collapsed .page-header {
   left: 0px;
+  top: 50px;
 }
 
 .container {
     padding-left: 0;
     padding-right: 0;
     width: 100%;
+}
+
+.liv-score p {
+  color: #36bc28;
+  font-size: 60px;
+  font-size: 3.75rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 33px 0 0;
+  text-align: center;
 }

@@ -217,6 +217,7 @@ a:active {
 	/* Layout Fixed - Sidebar Left Collapsed */
 	html.fixed.sidebar-left-collapsed .page-header {
 		left: 0px;
+		top: 50px;
 	}
 
 	html.fixed.sidebar-left-collapsed .content-body {
@@ -562,7 +563,7 @@ a:active {
 /* Content With Menu - Menu and Body */
 @media only screen and (min-width: 768px) {
 	.content-with-menu {
-		border-top: 110px solid transparent;
+		border-top: 100px solid transparent;
 		margin: -150px -40px -53px -40px;
 		min-height: 100vh;
 	}
@@ -904,6 +905,7 @@ a:active {
 	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
 	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu {
 		left: 0px;
+		top: 104px;
 	}
 
 	html.fixed.sidebar-left-collapsed.sidebar-right-opened .content-with-menu .inner-toolbar {
@@ -1746,6 +1748,7 @@ html.header-dark .header .input-search .input-group-btn .btn-default {
 	/* Layout Fixed - Sidebar Left Collapsed */
 	html.fixed.sidebar-left-collapsed .page-header {
 		left: 0px;
+		top: 50px;
 	}
 
 	html.fixed.sidebar-left-collapsed .content-body {
@@ -1912,6 +1915,7 @@ html.header-dark .header .input-search .input-group-btn .btn-default {
 	/* Layout Fixed - Sidebar Left Collapsed */
 	html.fixed.sidebar-left-collapsed .page-header {
 		left: 0px;
+		top: 50px;
 	}
 
 	html.fixed.sidebar-left-collapsed .content-body {

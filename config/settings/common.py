@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = (
 # Apps specific for this project go here.
 LOCAL_APPS = (
     'on_admin.users',  # custom users app
+    'actors'
     # Your stuff: custom apps go here
 )
 

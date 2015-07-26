@@ -58,20 +58,8 @@
 
     <div id="page_wrapper">
     <!-- start: header -->
-    <header class="header">
-      <div class="logo-container">
-        <a href="../" class="logo">
-          <img src="{% static 'images/logo.png' %}" height="35" alt="OnAdmin" />
-        </a>
-        <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
-          <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
 
-        </div>
-      </div>
-
-
-    </header>
-    <!-- end: header -->
+    <!-- end: header --> 
 
     <div class="container">
 
@@ -92,7 +80,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    {% block javascript %}
+
       <!-- Latest JQuery -->
       <script src="{% static 'js/jquery/jquery.js' %}"></script>
       <script src="{% static 'js/jquery/jquery.browser.mobile.js' %}"></script>
@@ -121,8 +109,9 @@
       <script src="{% static 'js/gauge/gauge.js' %}"></script>
       <script src="{% static 'js/snap-svg/snap.svg.js' %}"></script>
       <script src="{% static 'js/liquid-meter/liquid.meter.js' %}"></script>
-
-
+      <script src="{% static 'js/dashboard/examples.dashboard.js' %}"></script>
+    {% block javascript %}
+    {% endblock javascript %}
 
       <!-- place project specific Javascript in this file -->
       <!-- Theme Base, Components and Settings -->
@@ -136,7 +125,7 @@
 
 
 
-    {% endblock javascript %}
+
   </body>
 </html>
 
