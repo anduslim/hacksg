@@ -68,7 +68,7 @@ class SubZone(models.Model):
 
     name = models.CharField(max_length=150, blank=False)
 
-    overall_score = models.IntegerField(blank=False)
+    overall_score = models.IntegerField(blank=False, default=0)
 
     def __str__(self):
         return ' '.join([self.get_town_name_display(), self.name])
@@ -91,7 +91,7 @@ class Category(models.Model):
         choices=CATEGORY_CHOICES
         )
 
-    score = models.IntegerField(blank=False)
+    score = models.IntegerField(blank=False, default=0)
 
     subzone = models.ForeignKey('SubZone', blank=False, null=False, related_name='subzone_engagement')
 
