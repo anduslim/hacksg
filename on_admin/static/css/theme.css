@@ -217,7 +217,7 @@ a:active {
 	/* Layout Fixed - Sidebar Left Collapsed */
 	html.fixed.sidebar-left-collapsed .page-header {
 		left: 0px;
-		top: 50px;
+		top: 80px;
 	}
 
 	html.fixed.sidebar-left-collapsed .content-body {
@@ -641,7 +641,7 @@ a:active {
 
 	html.fixed .inner-menu-toggle {
 		position: absolute;
-		top: 114px;
+		top: 134px;
 		border-radius: 0 0 5px 0;
 		width: 140px;
 		z-index: 1002;
@@ -653,7 +653,7 @@ a:active {
 		left: 300px;
 		position: fixed;
 		margin: 0;
-		top: 114px;
+		top: 134px;
 		width: 300px;
 		padding: 35px;
 		z-index: 1002;
@@ -665,7 +665,7 @@ a:active {
 
 	html.fixed .inner-body {
 		margin-left: 300px;
-		border-top: 113px solid transparent;
+		border-top: 143px solid transparent;
 		margin-top: -110px;
 		min-height: 100vh;
 		position: relative;
@@ -905,7 +905,7 @@ a:active {
 	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu-toggle,
 	html.fixed.sidebar-left-collapsed.inner-menu-opened .inner-menu {
 		left: 0px;
-		top: 104px;
+		top: 134px;
 	}
 
 	html.fixed.sidebar-left-collapsed.sidebar-right-opened .content-with-menu .inner-toolbar {
@@ -1748,7 +1748,7 @@ html.header-dark .header .input-search .input-group-btn .btn-default {
 	/* Layout Fixed - Sidebar Left Collapsed */
 	html.fixed.sidebar-left-collapsed .page-header {
 		left: 0px;
-		top: 50px;
+		top: 80px;
 	}
 
 	html.fixed.sidebar-left-collapsed .content-body {
@@ -1915,7 +1915,7 @@ html.header-dark .header .input-search .input-group-btn .btn-default {
 	/* Layout Fixed - Sidebar Left Collapsed */
 	html.fixed.sidebar-left-collapsed .page-header {
 		left: 0px;
-		top: 50px;
+		top: 80px;
 	}
 
 	html.fixed.sidebar-left-collapsed .content-body {

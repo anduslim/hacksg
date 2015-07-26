@@ -34,3 +34,47 @@ var mapOptions =  {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);*/
+
+var eventHandler = function(data) {
+
+    console.log("success: content(scores) for subzone:" + data.name + " scores:" + data.scores.overall);
+
+    $("#livability-total-score").text(data.scores.overall)
+    $("#meterHousing").prev("svg").find("text tspan:first").text(data.scores.Housing);
+    $("#meterNeighbourhood").prev("svg").find("text tspan:first").text(data.scores.Neighbourhood);
+    $("#meterTransportation").prev("svg").find("text tspan:first").text(data.scores.Transportation);
+    $("#meterEnvironment").prev("svg").find("text tspan:first").text(data.scores.Environment);
+    $("#meterHealth").prev("svg").find("text tspan:first").text(data.scores.Health);
+    $("#meterEngagement").prev("svg").find("text tspan:first").text(data.scores.Engagement);
+
+};
+
+var errorHandler = function(xhr) {
+    switch (xhr.status) {
+      //Shipping rate api error
+      case 400:
+      console.log("API error: inside xhr:" + xhr.status + " " + $.parseJSON(xhr.responseText)["error_msg"]);
+
+    break;
+
+
+  }
+};
+
+function getScores(){
+  $.ajax("./get_subzone_score", {
+    data: {
+      subzone: $('#subzone-select').val(),
+    },
+    success: eventHandler,
+    error: errorHandler
+  });
+  console.log("Inside function getScores");
+}
+
+
+$('#subzone-select').change(function() {
+    getScores();
+/*  alert('The option with value ' + $(this).val() + ' and text ' + $(this).text() + ' was selected.');
+*/
+});
