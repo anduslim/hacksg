@@ -71,7 +71,7 @@ class SubZone(models.Model):
     overall_score = models.IntegerField(blank=False, default=0)
 
     def __str__(self):
-        return ' '.join([self.get_town_name_display(), self.name])
+        return ', '.join([self.get_town_name_display(), self.name])
 
 class Category(models.Model):
 
@@ -94,6 +94,9 @@ class Category(models.Model):
     score = models.IntegerField(blank=False, default=0)
 
     subzone = models.ForeignKey('SubZone', blank=False, null=False, related_name='subzone_engagement')
+
+    def __str__(self):
+        return ', '.join([self.subzone.name, self.get_category_type_display(), str(self.score)])
 
 
 class Amendity(models.Model):
